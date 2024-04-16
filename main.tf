@@ -12,7 +12,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-unique-bucket-name-12345"  # Ensure the bucket name is globally unique
-  acl    = "public"
+  acl    = "public-read"
 
   tags = {
     Name        = "MyS3Bucket"
